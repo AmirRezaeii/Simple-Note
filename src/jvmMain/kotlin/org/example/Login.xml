@@ -1,0 +1,86 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:padding="28dp"
+                  android:gravity="center_horizontal">
+
+        <TextView android:text="Let's Login"
+                  android:textSize="32sp"
+                  android:textStyle="bold"
+                  android:textColor="@color/darkText"
+                  android:layout_marginTop="32dp"
+                  android:fontFamily="sans-serif-black"/>
+
+        <TextView android:text="And notes your idea"
+                  android:textColor="@color/grayText"
+                  android:textSize="16sp"
+                  android:layout_marginBottom="24dp"/>
+
+        <TextView android:text="Email Address"
+                  android:textStyle="bold"
+                  android:textColor="@color/darkText"/>
+        <EditText
+                android:id="@+id/edtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/rounded_input"
+                android:hint="Example: johndoe@gmail.com"
+                android:inputType="textEmailAddress"
+                android:padding="14dp"
+                android:layout_marginTop="4dp"/>
+
+        <TextView android:text="Password"
+                  android:textStyle="bold"
+                  android:textColor="@color/darkText"
+                  android:layout_marginTop="24dp"/>
+        <EditText
+                android:id="@+id/edtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/rounded_input"
+                android:hint="********"
+                android:inputType="textPassword"
+                android:padding="14dp"
+                android:layout_marginTop="4dp"/>
+
+        <Button android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="Login"
+                android:background="@color/primaryPurple"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="32dp"
+                android:backgroundTint="@color/primaryPurple"
+                android:fontFamily="sans-serif-medium"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp">
+            <View android:layout_weight="1" android:layout_width="0dp" android:layout_height="1dp" android:background="@color/grayText"/>
+            <TextView android:text="Or" android:layout_marginHorizontal="10dp" android:textColor="@color/grayText"/>
+            <View android:layout_weight="1" android:layout_width="0dp" android:layout_height="1dp" android:background="@color/grayText"/>
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/txtGoRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't have any account? Register here"
+                android:textColor="@color/primaryPurple"
+                android:textSize="15sp"
+                android:layout_marginTop="8dp"
+                android:clickable="true"
+                android:focusable="true"/>
+    </LinearLayout>
+</ScrollView>
