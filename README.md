@@ -1,25 +1,28 @@
 # Simple Note
+**Simple Note** is a cross-platform mobile application for managing notes, developed as a complete project with backend API support. The app allows users to create, edit, organize, and search through their notes with a clean, user-friendly interface.
 
-**Simple Note** is a lightweight, cross-platform note-taking application built natively for both **Android** (Kotlin) and **iOS** (Swift). The app provides a clean, minimal interface for creating, editing, and managing notes without unnecessary complexity.
-
-Perfect for users who want a fast, private, and simple note-taking experience.
+The project includes:
+- **Android app** (Kotlin)
+- **iOS app** (Swift)
+- **Backend API** (Django REST Framework)
 
 ---
 
 ## Features
 
-- **Create notes** – Write and save notes instantly
-- **Edit notes** – Modify existing content
+### Core Functionality
+- **User registration & login** – Create an account and sign in securely
+- **View notes list** – See all your notes with pagination support
+- **Search notes** – Find notes quickly by content or title
+- **View note details** – Read full content of any note
+- **Create notes** – Add new notes to your collection
+- **Edit notes** – Modify existing notes
 - **Delete notes** – Remove notes you no longer need
-- **List view** – See all your notes in a clean list
-- **Search notes** (if implemented) – Find notes by title or content
-- **Light/Dark mode** (if implemented) – Automatic theme matching
+- **Profile management** – View user profile and logout
+- **Token refresh mechanism** – Automatic token refresh for secure authentication
 
----
-
-## Platform Support
-
-| Platform | Language | Minimum Version |
-|:---------|:---------|:----------------|
-| **Android** | Kotlin | API 24 (Android 7.0) |
-| **iOS** | Swift | iOS 15.0+ |
+### Technical Features
+- **RESTful API** – Backend built with Django REST Framework
+- **JWT authentication** – Secure token-based auth with refresh capability
+- **Native mobile apps** – Separate Android and iOS implementations
+- **Live API documentation** – Interactive API docs available
